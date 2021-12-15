@@ -84,15 +84,11 @@ buttons = [
             text=" Aᴅᴅ ғʟᴋʀᴇɴᴢᴀ ᴛᴏ ɢʀᴏᴜᴘ ", url="http://t.me/Florenza_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️Aʙᴏᴜᴛ", callback_data="masha_"),
-        InlineKeyboardButton(text="🆘Hᴇʟᴘ", callback_data="help_back"),
-    ],
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="masha_"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
+    ],    
     [
-        InlineKeyboardButton(
-            text="ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/starz_network"),
-    ],
-    [
-        InlineKeyboardButton(text="🔱 𝗗𝗘𝗩 🔱", url=f"https://t.me/Rockstar_xdd"),
+        InlineKeyboardButton(text="ᴅᴇᴠ", url=f"https://t.me/Rockstar_xdd"),
         InlineKeyboardButton(
             text="ᴠᴄ ᴘʟᴀʏᴇʀ", url=f"https://telegram.dog/Florenza_Assistant"
         ),
@@ -102,6 +98,10 @@ buttons = [
         InlineKeyboardButton(
             text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/Florenzaupdates"
         ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/starz_network"),
     ],
 ]
 
@@ -365,7 +365,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Florenza's licensed under the GNU General Public License v3.0_
                  Here is the [💾Repository](https://t.me/FlorenzaSupport).
-                 If you have any question about Lovely, let us know at @FlorenzaSupport.""",
+                 If you have any question about Florenza, let us know at @FlorenzaSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -682,7 +682,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Lovely is back with explosive features.✨")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Florenza is back with explosive features.✨")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
