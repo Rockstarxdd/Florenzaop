@@ -13,4 +13,4 @@ async def awake(event):
   LOVELY += "**Mʏ σωηєя :**  [🖤 𝗦𝗧𝗔𝗥𝗚𝗜𝗥𝗟🖤🇮🇳™](t.me/TUSHAR204)\n\n"
   LOVELY += "**Aʙᴏᴜᴛ Mʏ 𝙾𝚠𝚗𝚎𝚛 🤩 :** [🖤 𝗦𝗧𝗔𝗥𝗚𝗜𝗥𝗟🖤🇮🇳™](t.me/ABOUTVEDMAT)\n\n"
   BUTTON = [[Button.url("𝗦𝗨𝗣𝗣𝗢𝗥𝗧🙂", "https://t.me/FlorenzaSupport"), Button.url("𝗨𝗣𝗗𝗔𝗧𝗘", "https://t.me/Starz_bots")]]
-  await love.send_file(event.chat_id, PHOTO, caption=Florenza,  buttons=BUTTON)
+  await love.send_file(event.chat_id, PHOTO, caption=Lovely,  buttons=BUTTON)
