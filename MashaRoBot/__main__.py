@@ -393,6 +393,13 @@ If you have any question about Florenza, let us know at @FlorenzaSupport.""",
                         text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/FlorenzaUpdates"),
 
                  ],
+                 
+                 [
+                  
+                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back")
+                 
+                 ],
+
                  [
 
                     InlineKeyboardButton(text="Back", callback_data="masha_back")
