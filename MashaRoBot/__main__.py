@@ -74,35 +74,36 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ 🤗 ɪ ᴀᴍ [ꜰʟᴏʀᴇɴᴢᴀ](http://t.me/Florenza_bot?startgroup=true) ᴘᴏᴡᴇʀꜰᴜʟʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ
+ʜᴇʟʟᴏ 🤗 ɪ ᴀᴍ ꜰʟᴏʀᴇɴᴢᴀ ᴘᴏᴡᴇʀꜰᴜʟʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ
 ɪ ᴀᴍ ᴠᴇʀʏ ꜰᴀꜱᴛ ᴀɴᴅ  ᴍᴏʀᴇ ᴇꜰꜰɪᴄɪᴇɴᴛ  ɪ ᴘʀᴏᴠɪᴅᴇ ᴀᴡᴇꜱᴏᴍᴇ  ꜰᴇᴀᴛᴜʀᴇꜱ ᴡʜɪᴄʜ ᴀ ᴏᴡɴᴇʀ ᴡɪʟʟ ʟᴏᴏᴋ ꜰᴏʀ  ꜰɪʟᴛᴇʀ ,ᴡᴀʀɴ ꜱʏꜱᴛᴇᴍ,ꜱᴀᴠᴇ ɴᴏᴛᴇꜱ, ꜰʟᴏᴏᴅ, ʙᴀɴ ᴀɴᴅ ᴍᴏʀᴇ!
 """
 
 buttons = [
+
     [
+
         InlineKeyboardButton(
-            text=" Aᴅᴅ ғʟᴋʀᴇɴᴢᴀ ᴛᴏ ɢʀᴏᴜᴘ ", url="http://t.me/Florenza_bot?startgroup=true"),
+
+            text="ᴋɪᴅɴᴀᴘʟ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴏ", url="t.me/Florenza_bot?startgroup=true"),
+
     ],
+
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="masha_"),
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
-    ],    
-    [
-        InlineKeyboardButton(text="ᴅᴇᴠ", url=f"https://t.me/Rockstar_xdd"),
-        InlineKeyboardButton(
-            text="ᴠᴄ ᴘʟᴀʏᴇʀ", url=f"https://telegram.dog/Florenza_Assistant"
-        ),
-    ],  
-    [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Florenzasupport"),
-        InlineKeyboardButton(
-            text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/Florenzaupdates"
-        ),
+
+        InlineKeyboardButton(text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="masha_"),
+
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+
     ],
-    [
-        InlineKeyboardButton(
-            text="ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/starz_network"),
+   
+    [   
+
+        InlineKeyboardButton(text="sᴛᴀʀᴢ ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/STARZ_NETWORK"
+
+    ),
+
     ],
+
 ]
 
 
@@ -356,23 +357,42 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
-                 ❍ I can restrict users.
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Florenza's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/FlorenzaSupport).
-                 If you have any question about Florenza, let us know at @FlorenzaSupport.""",
+            text=""" ℹ️ I'm *Florenza*, a powerful group management bot built to help you manage your group easily.
+❍ I can restrict users.
+❍ I can greet users with customizable welcome messages and even set a group's rules.
+❍ I have an advanced anti-flood system.
+❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+❍ I check for admins' permissions before executing any command and more stuffs
+\n_Florenza's licensed under the GNU General Public License v3.0_
+If you have any question about Florenza, let us know at @FlorenzaSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
-                 ]
+
+                   InlineKeyboardButton(
+
+                        text="ғʟᴏʀᴇɴᴢᴀ ʟᴏɢs", url="t.me/LOV3LYLOGS"),
+
+                   InlineKeyboardButton(
+
+                        text="ᴅᴇᴠʟᴏᴘᴇʀs", url="https://t.me/ROCKSTAR_XDD"),
+
+                 ],
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/FlorenzaSupport"),
+
+                   InlineKeyboardButton(
+
+                        text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/FlorenzaUpdates"),
+
+                 ],
                 ]
             ),
         )
@@ -444,7 +464,12 @@ def get_help(update: Update, context: CallbackContext):
                             text="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
-                    ]
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="masha_"
+                        ),
+                    ],
                 ]
             ),
         )
