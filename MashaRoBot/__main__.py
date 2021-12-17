@@ -467,13 +467,13 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="masha_"
+                            text="ᴏᴘᴇɴ ʜᴇʀᴇ", callback_data="masha_"
                         ),
                     ],
                 ]
