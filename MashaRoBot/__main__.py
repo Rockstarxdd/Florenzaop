@@ -84,7 +84,7 @@ buttons = [
 
         InlineKeyboardButton(
 
-            text="ᴋɪᴅɴᴀᴘʟ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴏ", url="t.me/Florenza_bot?startgroup=true"),
+            text="ᴋɪᴅɴᴀᴘʟ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/Florenza_bot?startgroup=true"),
 
     ],
 
@@ -393,6 +393,12 @@ If you have any question about Florenza, let us know at @FlorenzaSupport.""",
                         text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/FlorenzaUpdates"),
 
                  ],
+                 [
+
+                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+
+                 ]
+
                 ]
             ),
         )
