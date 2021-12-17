@@ -84,7 +84,7 @@ buttons = [
 
         InlineKeyboardButton(
 
-            text="ᴋɪᴅɴᴀᴘʟ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/Florenza_bot?startgroup=true"),
+            text="ᴋɪᴅɴᴀᴘᴘ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/Florenza_bot?startgroup=true"),
 
     ],
 
