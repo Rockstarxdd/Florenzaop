@@ -303,7 +303,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/LOVELYUPDATES/2">?</a>]'.format(
+        text += ' [<a href="https://t.me/starz_bots/12">?</a>]'.format(
             bot.username
         )
 
